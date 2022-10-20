@@ -22,16 +22,30 @@
    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/main.css">
+   
+   	<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+</style>
 </head>
 
 <body>
    <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
-
-
-
-   <!-- pre loader area start -->
+	<!-- pre loader area start -->
    <div class="bd-preloader">
       <div class="bd-preloader__center">
          <span>
@@ -42,11 +56,7 @@
    <!-- pre loader area end -->
 
    <!-- back to top start -->
-   <div class="progress-wrap">
-      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-      </svg>
-   </div>
+   <button onclick="window.location.href='https://www.instagram.com/ruby_bunny.0301/';" id="myBtn" type="button"><img src="https://by3302files.storage.live.com/y4mhOW-oDERrQenQOY5P3vL8eC4Yskgic9zyFBPSi1BGylhP_CyEryUqNONeTjHtFS3Le2BXg1F7HC_bhKzXQomVuN3AZoP5jubIjT54ahM5xWf3Dy0fafwfll02rTvZxjIxyi9Qns2yLB0_NXJYbiF2d1FlB994Vk2UUgLzWPoG7-QMTjs4z9cTRTPu6Irf2x2?width=100&height=100&cropmode=none"></button>
    <!-- back to top end -->
 
    <!-- back to top end -->
@@ -66,71 +76,17 @@
                   </div>
                   <div class="col-lg-10 col-md-6 col-6">
                      <div class="d-flex justify-content-end">
-                        <div class="main-menu">
+                        
+						 <div class="main-menu">
                            <nav id="mobile-menu">
-                              <ul>
-                                 <li class="has-dropdown">
-                                    <a href="index-3.html">Home</a>
-                                    <ul class="submenu">
-                                       <li><a href="index.html">Home Style 1</a></li>
-                                       <li><a href="index-2.html">Home Style 2</a></li>
-                                       <li><a href="index-3.html">Home Style 3</a></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a href="about.html">About</a>
-                                 </li>
-                                 <li class="has-dropdown">
-                                    <a href="portfolio.html">Projects</a>
-                                    <ul class="submenu">
-                                       <li><a href="portfolio.html">Projects V1</a></li>
-                                       <li><a href="portfolio-2.html">Projects V2</a></li>
-                                       <li><a href="portfolio-details.html">Projects Details V1</a></li>
-                                       <li><a href="portfolio-details-2.html">Projects Details V2 </a></li>
-                                       <li><a href="portfolio-details-3.html">Projects Details V3 </a></li>
-                                       <li><a href="portfolio-details-4.html">Projects Details V4 </a></li>
-                                       
-                                    </ul>
-                                 </li>
-                                
-                                 <li class="has-dropdown">
-                                    <a href="services.html">Servics</a>
-                                    <ul class="submenu">
-                                       <li><a href="services.html">services</a></li>
-                                       <li><a href="services-details.html">Services details</a></li>
-                                    </ul>
-                                 </li>
-                                 <li class="has-dropdown">
-                                    <a href="blog.html">Blog</a>
-                                    <ul class="submenu">
-                                       <li><a href="blog.html">Blog V1</a></li>
-                                       <li><a href="blog-2.html">Blog V2</a></li>
-                                       <li><a href="blog-3.html">Blog V3</a></li>
-                                       <li><a href="blog-4.html">Blog V4</a></li>
-                                       <li><a href="blog-details.html">Blog Details</a></li>
-                                      
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a href="contact.html">Contact</a>
-                                 </li>
-                              </ul>
+                              <div class="headerPage"></div>
                            </nav>
                         </div>
+						 
+							
                         <div class="bd-header__main-right d-flex justify-content-end align-items-center pl-30">
 
-                           <div class="bd-header__search d-none d-md-block p-relative">
-                              <div class="bd-header__search-wrapper">
-                                 <button class="bd-header__search-btn"><i class="fal fa-search"></i></button>
-                                 <button class="bd-header__search-btn-close"><i class="fal fa-times"></i></button>
-                              </div>
-                              <div class="bd-header__search-form">
-                                 <form>
-                                    <input type="text" placeholder="Search Here">
-                                    <button><i class="fal fa-search"></i></button>
-                                 </form>
-                              </div>
-                           </div>
+                           
                            <div class="bd-header__hamburger ml-50">
                               <button type="button" class="hamburger-btn offcanvas-open-btn">
                                  <span></span>
@@ -148,7 +104,7 @@
    </header>
    <!-- header area end -->
 
-   <!-- offcanvas area start -->
+      <!-- offcanvas area start -->
    <div class="offcanvas__area">
       <div class="offcanvas__wrapper">
          <div class="offcanvas__content">
@@ -164,56 +120,18 @@
                   </button>
                </div>
             </div>
-            <div class="offcanvas__search mb-25">
-               <form action="#">
-                  <input type="text" placeholder="What are you searching for?">
-                  <button type="submit"><i class="far fa-search"></i></button>
-               </form>
-            </div>
             <div class="mobile-menu fix mb-40"></div>
 
-            <div class="offcanvas__map d-none d-lg-block mb-15">
-               <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd"></iframe>
-            </div>
-
+            
             <div class="offcanvas__contact mt-30 mb-20">
-               <h4>Contact Info</h4>
-               <ul>
-                  <li class="d-flex align-items-center">
-                     <div class="offcanvas__contact-icon mr-15">
-                        <i class="fal fa-map-marker-alt"></i>
-                     </div>
-                     <div class="offcanvas__contact-text">
-                        <a target="_blank"
-                           href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A,
-                           Mirnada City Tower, NYC</a>
-                     </div>
-                  </li>
-                  <li class="d-flex align-items-center">
-                     <div class="offcanvas__contact-icon mr-15">
-                        <i class="far fa-phone"></i>
-                     </div>
-                     <div class="offcanvas__contact-text">
-                        <a href="mailto:support@gmail.com">088889797697</a>
-                     </div>
-                  </li>
-                  <li class="d-flex align-items-center">
-                     <div class="offcanvas__contact-icon mr-15">
-                        <i class="fal fa-envelope"></i>
-                     </div>
-                     <div class="offcanvas__contact-text">
-                        <a href="tel:+012-345-6789">support@mail.com</a>
-                     </div>
-                  </li>
-               </ul>
+               
             </div>
             <div class="offcanvas__social">
                <ul>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="https://www.facebook.com/rubyjill0301"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/ruby_bunny.0301/"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UC71Wh_HP8kQRBggafXjVprQ"><i class="fab fa-youtube"></i></a></li>
+                  <li><a href="https://www.pinkoi.com/store/sweet-story"><i class="fab fa-solid fa-store"></i></a></li>
                </ul>
             </div>
          </div>
@@ -221,7 +139,6 @@
    </div>
    <div class="body-overlay"></div>
    <!-- offcanvas area end -->
-
    <main>
 
       <!-- breadcrumb area start -->
@@ -796,6 +713,23 @@
    <script src="assets/js/imagesloaded-pkgd.js"></script>
    <script src="assets/js/ajax-form.js"></script>
    <script src="assets/js/main.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+	$(".headerPage").load("header.html");
+	</script>
+		<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+
+    mybutton.style.display = "block";
+}
+
+</script>
 </body>
 
 </html>
